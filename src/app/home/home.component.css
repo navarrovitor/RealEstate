@@ -1,27 +1,81 @@
-.container {
-  position: relative;
-  margin-top: 50vh;
-  padding-top: 3vh;
-  width: 50%;
+.image-text {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  margin-top: 20px;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.house-info {
+.first-row {
+  margin-top: 10px;
+  color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
-  margin-bottom: 0;
 }
 
-#location {
-  color: #0881a3;
+.second-row {
+  color: #cef3f3;
+}
+.second-row i {
+  margin: 0 15px;
+}
+
+.no-focus {
+  font-size: 12px;
   margin-bottom: 10px;
-}
-
-#price {
-  color: #aeb5c2;
-  font-size: small;
+  color: #effbfb;
   margin-bottom: 0;
 }
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #30c5c5;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
-#taxes {
-  color: #c5cad3;
-  font-size: smaller;
+.btn-flat:hover {
+  background: #208383;
+  color: white;
+}
+
+.under-carousel-container {
+  position: absolute;
+  margin-top: 625px;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  left: auto;
+}
+
+.icon-text {
+  font-size: 24px;
+  align-items: center;
+  padding: 10px;
+  color: #7a7a7a;
+}
+
+.room-list {
+  height: fit-content;
+  font-size: 15px;
+  color: #a3a3a3;
+  background-image: linear-gradient(#d6d6d6, #d6d6d6);
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.room-list ul {
+  list-style-type: none;
+}
+
+.room-list li {
+  padding: 1px;
 }

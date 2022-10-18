@@ -23,3 +23,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+body{
+  background-color: #F5F5F5;
+}

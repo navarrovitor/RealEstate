@@ -11,7 +11,7 @@
 .carousel-container img.image-active {
   display: block;
   width: 100%;
-  height: 50vh;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -59,27 +59,27 @@
 .btn-prev {
   left: 2vh;
 }
-.btn-prev:hover{
+.btn-prev:hover {
   color: rgba(255, 255, 255, 0.9);
 }
-.btn-prev:active{
+.btn-prev:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.icon-prev{
+.icon-prev {
   font-size: 2vh;
 }
 
 .btn-next {
   right: 2vh;
 }
-.btn-next:hover{
+.btn-next:hover {
   color: rgba(255, 255, 255, 0.9);
 }
-.btn-next:active{
+.btn-next:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.icon-next{
+.icon-next {
   font-size: 2vh;
 }
