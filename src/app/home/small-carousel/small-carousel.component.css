@@ -1,0 +1,64 @@
+.cards-wrapper {
+  display: flex;
+}
+
+.card {
+  margin: 0 0.5em;
+  width: calc(100% / 3);
+  border: none;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 #dbdbdb;
+}
+
+.image-wrapper {
+  height: 22vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-carousel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-prev {
+  left: 2vh;
+}
+.btn-prev:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.btn-prev:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-prev {
+  font-size: 20px;
+}
+
+.btn-next {
+  right: 2vh;
+}
+.btn-next:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.btn-next:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-next {
+  font-size: 20px;
+}

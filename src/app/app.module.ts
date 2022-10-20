@@ -5,9 +5,10 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BigCarouselComponent } from './home/big-carousel/big-carousel.component';
+import { SmallCarouselComponent } from './home/small-carousel/small-carousel.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, BigCarouselComponent],
+  declarations: [AppComponent, HomeComponent, BigCarouselComponent, SmallCarouselComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot([

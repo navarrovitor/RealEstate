@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Image } from './carousel-image';
-import { ImageService } from './image.service';
+import { ImageService } from '../image.service';
+import { Image } from '../image';
 
 @Component({
   selector: 're-big-carousel',
@@ -16,7 +16,7 @@ export class BigCarouselComponent implements OnInit {
   constructor(private imageService: ImageService) {}
 
   ngOnInit(): void {
-    this.images = this.imageService.getImages();
+    this.images = this.imageService.getImagesBig();
     this.autoChangeImage();
   }
 

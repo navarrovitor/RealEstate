@@ -2,7 +2,6 @@
   <img
     *ngFor="let image of images; let i = index"
     [src]="image.src"
-    [alt]="image.alt"
     [ngClass]="{ 'image-active': selectedIndex === i }"
   />
   <div class="carousel-dot-container">

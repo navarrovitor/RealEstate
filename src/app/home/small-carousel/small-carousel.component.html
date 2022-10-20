@@ -1,0 +1,24 @@
+<div class="carousel slide">
+  <div class="carousel-inner">
+    <!-- prettier-ignore-->
+    <div
+      *ngFor="let group of [0, 1, 2]; let i = index"
+      [ngClass]="{ 'active': selectedIndex === i }"
+      class="carousel-item"
+    >
+      <div class="cards-wrapper">
+        <div *ngFor="let image of images; let j = index" class="card">
+          <div class="image-wrapper">
+            <img [src]="images[i][j].src" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-carousel btn-prev" (click)="onPrevClick()">
+    <i class="fas fa-chevron-left icon-prev"></i>
+  </div>
+  <div class="btn-carousel btn-next" (click)="onNextClick()">
+    <i class="fas fa-chevron-right icon-next"></i>
+  </div>
+</div>
