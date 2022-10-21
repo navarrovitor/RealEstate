@@ -1,0 +1,48 @@
+.image-text {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  margin-top: 20px;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.first-row {
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.second-row {
+  color: #cef3f3;
+}
+.second-row i {
+  margin: 0 15px;
+}
+
+.no-focus {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #effbfb;
+  margin-bottom: 0;
+}
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #30c5c5;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.btn-flat:hover {
+  background: #208383;
+  color: white;
+}

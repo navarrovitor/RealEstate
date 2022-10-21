@@ -1,0 +1,28 @@
+.amenities {
+  margin: 1em 0;
+}
+
+.icon-text {
+  font-size: 24px;
+  align-items: center;
+  padding: 10px;
+  color: #7a7a7a;
+}
+
+.room-list {
+  height: fit-content;
+  font-size: 15px;
+  color: #a3a3a3;
+  background-image: linear-gradient(#d6d6d6, #d6d6d6);
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.room-list ul {
+  list-style-type: none;
+}
+
+.room-list li {
+  padding: 1px;
+}
