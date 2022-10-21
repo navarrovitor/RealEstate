@@ -10,8 +10,11 @@ import { Image } from '../image';
 })
 export class SmallCarouselComponent implements OnInit {
   images: Image[][] = [];
-
   selectedIndex = 0;
+
+  previewImage = false;
+  showMask = false;
+  lightboxImage!: Image;
 
   constructor(private imageService: ImageService) {}
 
@@ -35,5 +38,16 @@ export class SmallCarouselComponent implements OnInit {
     } else {
       this.selectedIndex++;
     }
+  }
+
+  onPreviewImage(i: number, j: number): void {
+    this.showMask = true;
+    this.previewImage = true;
+    this.lightboxImage = this.images[i][j];
+  }
+
+  exitModal() {
+    this.showMask = false;
+    this.previewImage = false;
   }
 }

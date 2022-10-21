@@ -9,16 +9,32 @@
       <div class="cards-wrapper">
         <div *ngFor="let image of images; let j = index" class="card">
           <div class="image-wrapper">
-            <img [src]="images[i][j].src" />
+            <img (click)="onPreviewImage(i,j)" [src]="images[i][j].src" />
           </div>
         </div>
       </div>
     </div>
+    <div *ngIf="showMask" class="lightbox">
+      <button *ngIf="previewImage" (click)="exitModal()" class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div *ngIf="previewImage" class="lightbox-img">
+        <img [src]="lightboxImage.src" />
+      </div>
+    </div>
   </div>
-  <div class="btn-carousel btn-prev" (click)="onPrevClick()">
+  <div
+    *ngIf="!previewImage"
+    class="btn-carousel btn-prev"
+    (click)="onPrevClick()"
+  >
     <i class="fas fa-chevron-left icon-prev"></i>
   </div>
-  <div class="btn-carousel btn-next" (click)="onNextClick()">
+  <div
+    *ngIf="!previewImage"
+    class="btn-carousel btn-next"
+    (click)="onNextClick()"
+  >
     <i class="fas fa-chevron-right icon-next"></i>
   </div>
 </div>
