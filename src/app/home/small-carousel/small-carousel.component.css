@@ -29,7 +29,7 @@
   bottom: 0;
   display: flex;
   align-items: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
   cursor: pointer;
   border: 0;
@@ -37,6 +37,7 @@
 
 .btn-prev {
   left: 2vh;
+  font-size: 20px;
 }
 .btn-prev:hover {
   color: rgba(255, 255, 255, 0.9);
@@ -45,22 +46,15 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.icon-prev {
-  font-size: 20px;
-}
-
 .btn-next {
   right: 2vh;
+  font-size: 20px;
 }
 .btn-next:hover {
   color: rgba(255, 255, 255, 0.9);
 }
 .btn-next:active {
   color: rgba(255, 255, 255, 0.5);
-}
-
-.icon-next {
-  font-size: 20px;
 }
 
 .lightbox {
