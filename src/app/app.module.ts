@@ -10,11 +10,24 @@ import { AmenitiesComponent } from './home/amenities/amenities.component';
 import { CarouselTextComponent } from './home/big-carousel/carousel-text/carousel-text.component';
 import { DescriptionComponent } from './home/description/description.component';
 import { MapComponent } from './home/map/map.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, BigCarouselComponent, SmallCarouselComponent, AmenitiesComponent, CarouselTextComponent, DescriptionComponent, MapComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    BigCarouselComponent,
+    SmallCarouselComponent,
+    AmenitiesComponent,
+    CarouselTextComponent,
+    DescriptionComponent,
+    MapComponent,
+  ],
   imports: [
     BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: '',
+    }),
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
