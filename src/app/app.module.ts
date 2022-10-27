@@ -9,9 +9,10 @@ import { SmallCarouselComponent } from './home/small-carousel/small-carousel.com
 import { AmenitiesComponent } from './home/amenities/amenities.component';
 import { CarouselTextComponent } from './home/big-carousel/carousel-text/carousel-text.component';
 import { DescriptionComponent } from './home/description/description.component';
+import { MapComponent } from './home/map/map.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, BigCarouselComponent, SmallCarouselComponent, AmenitiesComponent, CarouselTextComponent, DescriptionComponent],
+  declarations: [AppComponent, HomeComponent, BigCarouselComponent, SmallCarouselComponent, AmenitiesComponent, CarouselTextComponent, DescriptionComponent, MapComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
