@@ -1,6 +1,8 @@
 {
   "name": "real-estate",
   "version": "0.0.0",
+  "homepage": "https://navarrovitor.github.io/RealEstate",
+
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
