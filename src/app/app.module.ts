@@ -9,8 +9,7 @@ import { SmallCarouselComponent } from './home/small-carousel/small-carousel.com
 import { AmenitiesComponent } from './home/amenities/amenities.component';
 import { CarouselTextComponent } from './home/big-carousel/carousel-text/carousel-text.component';
 import { DescriptionComponent } from './home/description/description.component';
-import { MapComponent } from './home/map/map.component';
-import { AgmCoreModule } from '@agm/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,18 +20,15 @@ import { AgmCoreModule } from '@agm/core';
     AmenitiesComponent,
     CarouselTextComponent,
     DescriptionComponent,
-    MapComponent,
   ],
   imports: [
     BrowserModule,
-    AgmCoreModule.forRoot({
-      apiKey: '',
-    }),
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: '**', redirectTo: 'home', pathMatch: 'full' },
     ]),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
