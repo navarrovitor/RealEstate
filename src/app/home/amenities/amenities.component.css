@@ -1,28 +1,62 @@
+/* border: 2px solid magenta; */
 .amenities {
-  margin: 1em 0;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
-.icon-text {
-  font-size: 24px;
+.icons {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 10px;
-  color: #7a7a7a;
+  flex-wrap: wrap;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  height: fit-content;
+  width: 6em;
+}
+
+.icon-bold {
+  color: #3c87cd;
+}
+
+.room-modal {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .room-list {
-  height: fit-content;
-  font-size: 15px;
-  color: #a3a3a3;
-  background-image: linear-gradient(#d6d6d6, #d6d6d6);
-  background-size: 1px 100%;
-  background-repeat: no-repeat;
+  list-style-type: none;
+  padding: 0;
   margin: 0;
 }
 
-.room-list ul {
-  list-style-type: none;
+@media (min-width: 320px) {
+  .icons {
+    column-gap: 2em;
+  }
 }
 
-.room-list li {
-  padding: 1px;
+@media (min-width: 768px) {
+  .icons {
+    column-gap: 5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icons {
+    column-gap: 6em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icons {
+    column-gap: 6em;
+  }
 }

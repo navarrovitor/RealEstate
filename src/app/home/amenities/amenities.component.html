@@ -1,30 +1,31 @@
-<div class="container d-flex justify-content-between amenities">
-    <div class="d-flex flex-column icon-text">
-      <i class="fa-solid fa-person-swimming"></i>
-      <p>Piscina</p>
-      <i class="fa-solid fa-wifi"></i>
-      <p>wi-fi</p>
-    </div>
-    <div class="d-flex flex-column icon-text">
-      <i class="fa-solid fa-umbrella-beach"></i>
-      <p>100m da praia</p>
-      <i class="fa-solid fa-car-side"></i>
-      <p>Espaço para 4 carros</p>
-    </div>
-    <div class="d-flex flex-column icon-text">
-      <i class="fa-solid fa-door-open"></i>
-      <p>6 quartos</p>
-      <i class="fa-solid fa-users"></i>
-      <p>15 pessoas</p>
-    </div>
-    <div class="d-flex flex-column room-list">
-      <ul class="room-list">
-        <li><b>Quarto 1 -</b> 1 cama king, banheiro com box</li>
-        <li><b>Quarto 2 -</b> 2 camas de solteiros, banheiro com box</li>
-        <li><b>Quarto 3 -</b> 2 camas de solteiro, banheiro com box</li>
-        <li><b>Quarto 4 -</b> 1 cama de casal, banheiro com box</li>
-        <li><b>Quarto 5 -</b> 1 cama de casal, banheiro com box</li>
-        <li><b>Quarto 6 -</b> 2 camas de solteiro, banheiro com box</li>
-      </ul>
+<div class="container amenities">
+  <div class="icons">
+    <div *ngFor="let amenity of amenities; let i = index">
+      <div *ngIf="i != 4" class="icon">
+        <i class="{{ amenity.icon }}"></i>
+        <p>{{ amenity.info }}</p>
+      </div>
+      <div
+        *ngIf="i === 4"
+        class="icon icon-bold"
+        [ngbPopover]="content"
+        triggers="mouseenter:mouseleave"
+        #p="ngbPopover"
+        (click)="p.open()"
+        [popoverTitle]="title"
+      >
+        <i class="{{ amenity.icon }}"></i>
+        <p>{{ amenity.info }}</p>
+      </div>
     </div>
   </div>
+  <!-- Modal -->
+  <ng-template #title>Disposição das suítes</ng-template>
+  <ng-template #content>
+    <ul class="room-list">
+      <li *ngFor="let room of rooms; let i = index">
+        <b>Suíte {{ i + 1 }}:</b> {{ room }}
+      </li>
+    </ul>
+  </ng-template>
+</div>
