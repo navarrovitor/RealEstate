@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { BigCarouselComponent } from './home/big-carousel/big-carousel.component';
 import { SmallCarouselComponent } from './home/small-carousel/small-carousel.component';
 import { AmenitiesComponent } from './home/amenities/amenities.component';
-import { CarouselTextComponent } from './home/big-carousel/carousel-text/carousel-text.component';
 import { DescriptionComponent } from './home/description/description.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -18,7 +17,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BigCarouselComponent,
     SmallCarouselComponent,
     AmenitiesComponent,
-    CarouselTextComponent,
     DescriptionComponent,
   ],
   imports: [

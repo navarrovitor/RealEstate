@@ -8,3 +8,38 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
+.infos-container{
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.infos-container h1{
+  margin: auto 20px;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #30c5c5;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.btn-flat:hover {
+  background: #208383;
+  color: white;
+}

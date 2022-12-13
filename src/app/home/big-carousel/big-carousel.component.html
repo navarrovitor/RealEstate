@@ -1,7 +1,13 @@
 <div class="container-fluid">
+  <div class="infos-container">
+    <h1>Refúgio Manacá</h1>
+    <h5>Barra do Una - SP</h5>
+    <h6>A partir de R$ - /dia + taxas</h6>
+    <button class="btn btn-flat" href="#">Reservar</button>
+  </div>
   <ngb-carousel *ngIf="images">
     <ng-template ngbSlide *ngFor="let image of images">
-        <img [src]="image.src" />
+      <img [src]="image.src" />
     </ng-template>
   </ngb-carousel>
-  </div>
+</div>
