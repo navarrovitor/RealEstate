@@ -1,6 +1,7 @@
 <div class="container amenities">
   <div class="icons">
     <div *ngFor="let amenity of amenities; let i = index">
+      <!-- check if popover or new div -->
       <div *ngIf="i != 4" class="icon">
         <i class="{{ amenity.icon }}"></i>
         <p>{{ amenity.info }}</p>

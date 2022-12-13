@@ -1,9 +1,9 @@
-<div class="container-fluid">
+<div class="container-fluid big-carousel">
   <div class="infos-container">
-    <h1>Refúgio Manacá</h1>
-    <h5>Barra do Una - SP</h5>
-    <h6>A partir de R$ - /dia + taxas</h6>
-    <button class="btn btn-flat" href="#">Reservar</button>
+    <h1>{{title}}</h1>
+    <h5>{{location}}</h5>
+    <h6>A partir de R$ {{price}} /dia + taxas</h6>
+    <!-- <button class="btn btn-flat" href="#">Reservar</button> -->
   </div>
   <ngb-carousel *ngIf="images">
     <ng-template ngbSlide *ngFor="let image of images">

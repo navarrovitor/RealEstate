@@ -54,9 +54,3 @@
     column-gap: 6em;
   }
 }
-
-@media (min-width: 1024px) {
-  .icons {
-    column-gap: 6em;
-  }
-}

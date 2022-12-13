@@ -10,6 +10,9 @@ import { Image } from '../image';
 })
 export class BigCarouselComponent implements OnInit {
   images: Image[] = [];
+  title = "Refúgio Manacá"
+  location = "Barra do Una - SP"
+  price = 0
 
   constructor(private imageService: ImageService) {}
 
